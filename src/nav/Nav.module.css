@@ -1,0 +1,6 @@
+.navblock {
+    border: 1px solid;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
