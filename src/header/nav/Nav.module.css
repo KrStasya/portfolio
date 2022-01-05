@@ -1,0 +1,31 @@
+.navblock {
+    border: 1px solid;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.home,.features, .portfolio, .contact {
+    width: 400px;
+    color: #878e99;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: inline;
+    font-weight: 500;
+    transition-property: all ;
+    transition-duration:0.4s ;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+a {
+    opacity: 0.5;
+    text-decoration: none;
+}
+a:active,a:hover {
+    opacity: 1 !important;
+    color: white;
+}
+

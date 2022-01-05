@@ -1,0 +1,28 @@
+@import "../../../common/styles/sass/mixin";
+@import "../../../common/styles/sass/variables";
+
+.skill {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 35px 50px 35px 50px;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+    border-radius: $borderRadius;
+    background: $bgColorBasic;
+    box-shadow: $boxShadow;
+    z-index: 1;
+    height: 100%;
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+}
+.description {
+    @include text($fontDescriptionFamily,18px,28px);
+    color: $descriptionColor;
+}
+}
+

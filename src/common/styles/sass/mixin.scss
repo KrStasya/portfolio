@@ -1,0 +1,19 @@
+@import "./variables";
+@mixin text ($fontFamily,$fontSize,$lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin transition ($transitionProperty,$transitionDuration,$transitionTimingFunction,$transitionDelay) {
+  transition-property: $transitionProperty ;
+  transition-duration:$transitionDuration ;
+  transition-timing-function: $transitionTimingFunction;
+  transition-delay: $transitionDelay;
+}
+
+@mixin grow ($webkitTransform,$msTransform,$transform) {
+  -webkit-transform: $webkitTransform;
+  -ms-transform: $msTransform;
+  transform: $transform;
+}

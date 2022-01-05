@@ -1,0 +1,28 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixin";
+.title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    position: relative;
+    color: $titleColor;
+    font-weight: 700;
+    @include text($fontTitleFamily,24px,1.2);
+    .title h2 {
+        margin: 0;
+
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background: $primaryColor;
+        top: -5px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+}
+
+
+

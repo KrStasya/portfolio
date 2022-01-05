@@ -1,0 +1,73 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixin";
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  border-radius: $borderRadius;
+  z-index: 0;
+  background: $bgColorBasic;
+  box-shadow: $boxShadow;
+  &::before {
+    background: $bgColorHover;
+    border-radius: $borderRadius;
+    opacity: 0;
+    z-index: -1;
+  }
+  .picture {
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #212428;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: $borderRadius;
+      opacity: 0.4;
+    }
+
+    .look {
+      text-align: center;
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+
+    .projecttitle {
+      @include text($fontTitleFamily,24px,39px);
+      color: $titleColor;
+      margin-bottom: 7px;
+      font-weight: 500;
+    }
+
+    .description {
+      @include text($fontDescriptionFamily,18px,28px);
+      color: $descriptionColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+}
+
+
+
+
+

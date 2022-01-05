@@ -1,0 +1,19 @@
+.footer {
+   /* height: 30vh;*/
+    background-color: #121415;
+}
+
+.footerContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text {
+
+}
+.element {
+    display: flex;
+    justify-content: space-between;
+
+}

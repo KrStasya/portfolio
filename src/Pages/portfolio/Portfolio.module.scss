@@ -1,0 +1,33 @@
+@import "../../common/styles/sass/variables";
+
+.portfolioBlock {
+    min-height: 100vh;
+    background-color: $bgColor;
+
+    .portfolioContainer {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .projects {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            align-items: flex-start;
+            @media screen and (max-width: 752px)
+            {
+                justify-content: center;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+

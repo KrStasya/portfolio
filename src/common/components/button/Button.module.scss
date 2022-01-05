@@ -1,0 +1,24 @@
+@import "../../../common/styles/sass/mixin.scss";
+@import "../../../common/styles/sass/variables.scss";
+
+.button {
+    font-size: 25px;
+    right: 25px;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    background: $bgColorBasic;
+    box-shadow: $boxShadow;
+    border: 0 none;
+    top: 50px;
+    z-index: auto;
+    border-radius: $borderRadius;
+    color: $primaryColor;
+    opacity: 0.8;
+    &:hover {
+         background: $bgColorHover;
+         @include transition (all,0.5s,ease-in-out,0s);
+         @include grow (scale(1.05),scale(1.05),scale(1.05));
+     }
+}
+

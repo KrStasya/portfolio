@@ -1,13 +1,17 @@
+import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
 
-import React from "react";
-import style from './Button.module.css'
+import style from './Button.module.scss';
 
-type Button = {
-    title: string
-}
+type DefaultButtonPropsType = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
+type ButtonPropsType = DefaultButtonPropsType & {
+  title: string;
+};
 
-export function Button(props: Button) {
-    return (
-        <button className={style.button}>{props.title}</button>
-    )
-}
+export const Button: React.FC<ButtonPropsType> = ({ title, ...restProps }) => (
+  <button type="button" className={style.button} {...restProps}>
+    {title}
+  </button>
+);
